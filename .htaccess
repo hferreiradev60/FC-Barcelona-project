@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteBase /fcb/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^accueil$ public/index.php?url=home/index [QSA,L]
+RewriteRule ^contact$ public/index.php?url=contact/index [QSA,L]
+RewriteRule ^login$ public/index.php?url=login/index [QSA,L]
+RewriteRule ^logout$ public/index.php?url=logout/index [QSA,L]
+RewriteRule ^register$ public/index.php?url=register/index [QSA,L]
+RewriteRule ^joueurs$ public/index.php?url=joueurs/index [QSA,L]
+RewriteRule ^actualites$ public/index.php?url=actualites/index [QSA,L]
+RewriteRule ^matchs$ public/index.php?url=matchs/index [QSA,L]
+RewriteRule ^resultats$ public/index.php?url=resultats/index [QSA,L]
+RewriteRule ^joueur$ public/index.php?url=joueur/index [QSA,L]
+RewriteRule ^composition$ public/index.php?url=composition/index [QSA,L]
+RewriteRule ^classement$ public/index.php?url=classement/index [QSA,L]
+RewriteRule ^profil$ public/index.php?url=profil/index [QSA,L]
+RewriteRule ^modifiermotdepasse$ public/index.php?url=modifiermotdepasse/index [QSA,L]
+RewriteRule ^cms$ public/index.php?url=cms/index [QSA,L]
